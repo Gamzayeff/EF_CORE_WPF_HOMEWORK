@@ -1,0 +1,31 @@
+﻿<Window x:Class="EF_CORE_FluentApi_Homework3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:EF_CORE_FluentApi_Homework3"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="590" Width="800" Background="DarkBlue">
+    <Grid>
+        <RadioButton Foreground="LightYellow" Name="authorRadioButton" FontFamily="STENCIL" FontSize="18" Padding="10 0 0 0" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="20 20 0 0" BorderThickness="5" Background="White" BorderBrush="Red"  Height="100" Width="150" Content="Author"/>
+        <RadioButton Foreground="LightYellow" Name="bookRadioButton" FontFamily="STENCIL" FontSize="18" Padding="10 0 0 0" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="20 60 0 0" BorderThickness="5" Background="White" BorderBrush="Red" IsChecked="True" Height="100" Width="150" Content="Book"/>
+        <RadioButton Foreground="LightYellow" Name="categoryRadioButton" FontFamily="STENCIL" FontSize="18" Padding="10 0 0 0" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="20 100 0 0" BorderThickness="5" Background="White" BorderBrush="Red"  Height="100" Width="150" Content="Category"/>
+        <RadioButton Foreground="LightYellow" Name="departmentRadioButton" FontFamily="STENCIL" FontSize="18" Padding="10 0 0 0" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="20 140 0 0" BorderThickness="5" Background="White" BorderBrush="Red"  Height="100" Width="150" Content="Department"/>
+        <RadioButton Foreground="LightYellow" Name="facultyRadioButton" FontFamily="STENCIL" FontSize="18" Padding="10 0 0 0" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="20 180 0 0" BorderThickness="5" Background="White" BorderBrush="Red"  Height="100" Width="150" Content="Faculty"/>
+        <RadioButton Foreground="LightYellow" Name="groupRadioButton" FontFamily="STENCIL" FontSize="18" Padding="10 0 0 0" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="20 220 0 0" BorderThickness="5" Background="White" BorderBrush="Red"  Height="100" Width="150" Content="Group"/>
+        <RadioButton Foreground="LightYellow" Name="libRadioButton" FontFamily="STENCIL" FontSize="18" Padding="10 0 0 0" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="20 260 0 0" BorderThickness="5" Background="White" BorderBrush="Red"  Height="100" Width="150" Content="Lib"/>
+        <RadioButton Foreground="LightYellow" Name="presRadioButton" FontFamily="STENCIL" FontSize="18" Padding="10 0 0 0" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="20 300 0 0" BorderThickness="5" Background="White" BorderBrush="Red"  Height="100" Width="150" Content="pres"/>
+        <RadioButton Foreground="LightYellow" Name="scardRadioButton" FontFamily="STENCIL" FontSize="18" Padding="10 0 0 0" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="20 340 0 0" BorderThickness="5" Background="White" BorderBrush="Red"  Height="100" Width="150" Content="S-Card"/>
+        <RadioButton Foreground="LightYellow" Name="studentRadioButton" FontFamily="STENCIL" FontSize="18" Padding="10 0 0 0" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="20 380 0 0" BorderThickness="5" Background="White" BorderBrush="Red"  Height="100" Width="150" Content="Student"/>
+        <RadioButton Foreground="LightYellow" Name="tcardRadioButton" FontFamily="STENCIL" FontSize="18" Padding="10 0 0 0" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="20 420 0 0" BorderThickness="5" Background="White" BorderBrush="Red"  Height="100" Width="150" Content="T-Card"/>
+        <RadioButton Foreground="LightYellow" Name="teacherRadioButton" FontFamily="STENCIL" FontSize="18" Padding="10 0 0 0" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="20 460 0 0" BorderThickness="5" Background="White" BorderBrush="Red"  Height="100" Width="150" Content="Teacher"/>
+        <RadioButton Foreground="LightYellow" Name="themeRadioButton" FontFamily="STENCIL" FontSize="18" Padding="10 0 0 0" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="20 500 0 0" BorderThickness="5" Background="White" BorderBrush="Red"  Height="100" Width="150" Content="Theme"/>
+        <Button Name="getAllButton" MouseDoubleClick="GetAll"  Height="40" Background="Red" Foreground="Snow" Margin="-190 25 0 0" Width="120" VerticalAlignment="Top" Content="Get all" FontFamily="STENCIL" FontSize="18" />
+        <Button Name="updateButton" MouseDoubleClick="UpdateDatabase" Background="Red" Height="40" Foreground="AliceBlue" Margin="570 25 0 0" Width="120" VerticalAlignment="Top" Content="Update" FontFamily="STENCIL" FontSize="18" />
+
+        <DataGrid Name="dataGrid" AutoGenerateColumns="True" HorizontalAlignment="Right"  Margin="0 70 50 0" Height="450" Width="500" Background="White"/>
+        
+
+
+    </Grid>
+</Window>
